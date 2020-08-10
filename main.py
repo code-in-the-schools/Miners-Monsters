@@ -2,6 +2,8 @@ import pygame
 import os
 import plat
 
+img_path = os.path.join("paddle.png")
+
  #movement
 class Player(object):
   def __init__(self):
@@ -53,3 +55,5 @@ while running:
   p.gravity(screen_height)
   pf.draw(screen)
   pygame.display.update()
+
+ 

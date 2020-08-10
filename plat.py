@@ -9,7 +9,9 @@ class Platform(object):
     self.image = pygame.transform.scale(self.image,(70,70))
     self.y = 70 
     self.x = 70 
-    self.hitbox(self.x,self.y,55,55)
+    self.hitbox = (self.x,self.y,55,55)
 
   def draw(self,surface):
    surface.blit(self.image, (self.x, self.y))
+
+        
